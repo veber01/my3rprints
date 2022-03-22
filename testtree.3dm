@@ -1,7 +1,58 @@
-{shapes={
-  {7,0,7,9,8,9,texture="log_oak"},
-  {3,6,3,13,10,13,texture="leaves_oak",tint=0x48B518},
-  {5,10,5,11,12,11,texture="leaves_oak",tint=0x48B518},
-  {5,12,7,11,14,9,texture="leaves_oak",tint=0x48B518},
-  {7,12,5,9,14,11,texture="leaves_oak",tint=0x48B518}
-}}
+{
+  tooltip = "test print by veber01.",
+
+  lightLevel = 0,       --[[ The amount of light the printed block should emit.
+                             By default, values in the interval [0,8] are
+                             possible. To create blocks with a higher light
+                             level, craft the printed block with some glowstone
+                             dust, allowing them to reach up to the maximum
+                             light level, 15. This is only available in
+                             OpenComputers version 1.5.7 and later. ]]
+
+  emitRedstone = false, --[[ If this is false it behaves like a door, i.e.
+                             it switches to the model's active state when
+                             a redstone signal goes into the block - if there
+                             is an active state.
+                             If this is true it behaves like a lever or button,
+                             i.e. it emits a redstone signal when in its active
+                             state (set via a player right-clicking the block).
+                             It will not react to redstone if it is an emitter.
+                             The default is false.
+                             Starting with version 1.5.7 of OpenComputers, it is
+                             also possible to provide a number in the interval
+                             [0,15] here, where 0 is equivalent to `false`, and
+                             15 is equivalent to `true`. Arbitrary output
+                             signal strength, i.e. values other than 0 or 15,
+                             will require more material to print. ]]
+
+  buttonMode = false,   --[[ If this is false, the model behaves like a door or
+                             lever, i.e. it will remain in its active state
+                             until there is no redstone signal or it is
+                             activated again by a player.
+                             If this is true, the model will automatically
+                             return to its inactive if it was activated by a
+                             redstone signal or a player, i.e. it will behave
+                             like a button.
+                             The default is false. ]]
+
+  collidable = {true, true}, --[[ Determines whether the states of the print are
+                             collidable, i.e. whether players and other
+                             entities collide with them. If false, players and
+                             entities will be able to walk right through the
+                             respective state of the print. This way you can
+                             have a block that becomes passable when in its
+                             alternate state, or make a secret passage.
+                             The default is true for both states. ]]
+                          
+  
+  
+  shapes = {
+  {7,0,7,9,6,9,texture="log_oak"},
+  {6,0,6,10,2,10,texture="clay"},
+  {3,6,3,13,10,13,texture="wool_colored_green"},
+  {5,10,5,11,12,11,texture="wool_colored_green"},
+  {5,12,7,11,14,9,texture="wool_colored_green"},
+  {7,12,5,9,14,11,texture="wool_colored_green"}
+
+  }
+}

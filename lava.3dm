@@ -1,0 +1,9 @@
+
+  label="Just a regular non glitched lava block",
+  tooltip="Im normal :'(",
+  collidable={true,true},
+  shapes={
+    {0,0,0,16,16,16, texture="lava_still"},
+
+  }
+}

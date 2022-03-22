@@ -1,0 +1,5 @@
+{shapes={
+  {3,0,4,13,5,12,texture="wool_colored_pink"},
+  {6,5,7,10,12,9,texture="wool_colored_pink"},
+  {7,12,7,9,15,9,texture="wool_colored_pink"}
+}}

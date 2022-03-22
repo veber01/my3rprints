@@ -1,8 +1,15 @@
-{shapes={
+{
+buttonMode = true,
+shapes={
   {7,0,7,9,6,9,texture="log_oak"},
   {6,0,6,10,2,10,texture="clay"},
-  {3,6,3,13,10,13,texture="wool_colored_green"},
-  {5,10,5,11,12,11,texture="wool_colored_green"},
-  {5,12,7,11,14,9,texture="wool_colored_green"},
-  {7,12,5,9,14,11,texture="wool_colored_green"}
+  {3,6,3,13,10,13,texture="lava_still"},
+  {5,10,5,11,12,11,texture="lava_still"},
+  {5,12,7,11,14,9,texture="lava_still"},
+  {7,12,5,9,14,11,texture="lava_still"}
+  
+  {3,6,3,13,10,13,texture="diamond",state = true},
+  {5,10,5,11,12,11,texture="diamond",state = true},
+  {5,12,7,11,14,9,texture="diamond",state = true},
+  {7,12,5,9,14,11,texture="diamond",state = true}
 }}
